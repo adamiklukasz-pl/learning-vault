@@ -3,6 +3,7 @@
 SUBJECT="/C=PL/ST=Malopolskie/L=Cracow/O=Splunk/OU=IT/CN=Vault"
 
 mkdir -p ./.gen_certs
+mkdir -p /vault/certs
 
 currentPath=$(pwd)
 certPath=${currentPath}/.gen_certs
