@@ -1,0 +1,3 @@
+vault/certs/*
+.gen_certs/*
+vault/data/*
