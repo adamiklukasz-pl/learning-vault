@@ -3,7 +3,7 @@
 SUBJECT="/C=PL/ST=Malopolskie/L=Cracow/O=Splunk/OU=IT/CN=Vault"
 
 mkdir -p ./.gen_certs
-mkdir -p /vault/certs
+mkdir -p ./vault/certs
 
 currentPath=$(pwd)
 certPath=${currentPath}/.gen_certs
@@ -36,3 +36,5 @@ vaultCerts=$currentPath/vault/certs
 cp $certPath/server1.key $vaultCerts/vault_key.key
 cp $certPath/server1.pem $vaultCerts/vault_cert.pem
 cat $certPath/ca.cert.pem >> $vaultCerts/vault_cert.pem
+
+chmod 0755 $vaultCerts/*
